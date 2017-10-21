@@ -21,17 +21,10 @@ public class ListFragment extends Fragment {
 
     OnItemSelectedListener listener;
 
-
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
-
-
 
 
     @Override
@@ -53,9 +46,6 @@ public class ListFragment extends Fragment {
     }
 
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -69,15 +59,10 @@ public class ListFragment extends Fragment {
     }
 
 
-
-
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
     }
-
-
 
 
     @Override
@@ -90,10 +75,6 @@ public class ListFragment extends Fragment {
             throw new ClassCastException(activity.toString() + " must implement OnItemSelectedListener");
         }
     }
-
-
-
-
 
 
     public interface OnItemSelectedListener {

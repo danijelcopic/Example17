@@ -80,13 +80,13 @@ public class DetailFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
 
         // food - calory
-        TextView jeloKalorije = (TextView) getView().findViewById(R.id.tv_calorie_des);
-        jeloKalorije.setText(FoodProvider.getFoodById(position).getCalory());
+        TextView foodCalory = (TextView) getView().findViewById(R.id.tv_calorie_des);
+        foodCalory.setText(FoodProvider.getFoodById(position).getCalory());
 
         // food - price
-        TextView jeloCena = (TextView) getView().findViewById(R.id.tv_price);
+        TextView foodPrice = (TextView) getView().findViewById(R.id.tv_price);
         String stringdouble = Double.toString(FoodProvider.getFoodById(position).getPrice());
-        jeloCena.setText(stringdouble);
+        foodPrice.setText(stringdouble);
 
         // button for order
         Button btnBuy = (Button) getView().findViewById(R.id.bt_button_order);
@@ -167,13 +167,13 @@ public class DetailFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
 
         // food - calory
-        TextView jeloKalorije = (TextView) getView().findViewById(R.id.tv_calorie_des);
-        jeloKalorije.setText(FoodProvider.getFoodById(position).getCalory());
+        TextView foodCalory = (TextView) getView().findViewById(R.id.tv_calorie_des);
+        foodCalory.setText(FoodProvider.getFoodById(position).getCalory());
 
         // food - price
-        TextView jeloCena = (TextView) getView().findViewById(R.id.tv_price);
+        TextView foodPrice = (TextView) getView().findViewById(R.id.tv_price);
         String stringdouble = Double.toString(FoodProvider.getFoodById(position).getPrice());
-        jeloCena.setText(stringdouble);
+        foodPrice.setText(stringdouble);
 
         // button for order
         Button btnBuy = (Button) getView().findViewById(R.id.bt_button_order);
